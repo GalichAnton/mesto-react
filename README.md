@@ -1,3 +1,3 @@
 # mesto-react
 
-## init
+## init project
