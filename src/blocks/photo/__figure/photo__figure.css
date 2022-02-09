@@ -1,0 +1,7 @@
+.photo__figure {
+  margin: auto;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
