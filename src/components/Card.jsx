@@ -6,7 +6,11 @@ const Card = ({ card, onCardClick }) => {
       <li className="card">
         <button type="button" className="card__delete"></button>
         <div className="card__container" onClick={() => onCardClick(card)}>
-          <img src={card.link} className="card__photo" alt="#" />
+          <img
+            src={card.link}
+            className="card__photo"
+            alt="Красивая карточка"
+          />
         </div>
         <div className="card__descr">
           <h2 className="card__caption">{card.name}</h2>
