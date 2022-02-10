@@ -54,7 +54,7 @@ class Api {
   }
 
   // Отобразить количество лайков
-  likeCard(id) {
+  setCardLike(id) {
     return fetch(`${this._url}cards/likes/${id}`, {
       method: "PUT",
       headers: this._headers,

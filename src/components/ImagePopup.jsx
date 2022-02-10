@@ -4,7 +4,7 @@ const ImagePopup = ({ card, onClose }) => {
   return (
     <div
       onClick={onClose}
-      className={`popup photo ${card ? "popup_opened" : ""}`}
+      className={`popup photo ${card && "popup_opened"}`}
       id="image-popup"
     >
       <figure onClick={(e) => e.stopPropagation()} className="photo__figure">

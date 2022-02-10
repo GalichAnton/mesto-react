@@ -5,7 +5,6 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "google",
         "plugin:prettier/recommended"
     ],
     "parserOptions": {

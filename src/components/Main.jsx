@@ -11,8 +11,8 @@ const Main = ({ onEditProfile, onAddPlace, onEditAvatar, onCardClick }) => {
         setUser(userData);
         setCards(initialCards);
       })
-      .catch(() => {
-        (error) => console.log(error);
+      .catch((error) => {
+        console.log(error);
       });
   }, []);
 

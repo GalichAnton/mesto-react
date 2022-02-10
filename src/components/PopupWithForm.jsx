@@ -1,6 +1,13 @@
 import React from "react";
 
-const PopupWithForm = ({ title, name, children, isOpen, onClose }) => {
+const PopupWithForm = ({
+  title,
+  name,
+  children,
+  isOpen,
+  onClose,
+  buttonText = "Сохранить",
+}) => {
   return (
     <div
       onClick={onClose}
@@ -25,7 +32,7 @@ const PopupWithForm = ({ title, name, children, isOpen, onClose }) => {
             <legend className="popup__heading">{title}</legend>
             {children}
             <button type="submit" className="popup__submit">
-              Сохранить
+              {buttonText}
             </button>
           </fieldset>
         </form>
