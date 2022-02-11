@@ -4,7 +4,7 @@ const ImagePopup = ({ card, onClose }) => {
   return (
     <div
       onClick={onClose}
-      className={`popup photo ${card && "popup_opened"}`}
+      className={`popup photo ${card?.name && "popup_opened"}`} // без знака вопроса выдает ошибку при закрытии так как прередается null у которого нет name
       id="image-popup"
     >
       <figure onClick={(e) => e.stopPropagation()} className="photo__figure">
